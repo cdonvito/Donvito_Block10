@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+}
+
+#sky {
+  background-color: aqua;
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+  z-index: 1;
+}
+
+#building_one {
+  background-color: gray;
+  width: 10vw;
+  height: 40vh;
+  position: absolute;
+  top: 35vh;
+  left: 15vw;
+  z-index: 2;
+  margin: 0;
+  border: 1px solid black;
+}
+
+#building_two {
+  background-color: orange;
+  width: 35vw;
+  height: 35vh;
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  z-index: 2;
+  margin: 0;
+  border: 1px solid black;
+}
+
+#window1 {
+  display: grid;
+  grid-template:
+    "one two" 10vh
+    "three four" 10vh
+    "five six";
+  gap: 0 2vw;
+  position: absolute;
+  top: 4vh;
+  left: 1vw;
+  z-index: 3;
+}
+
+#window2 {
+  display: grid;
+  grid-template:
+    "one two three" 15vh
+    "four five six";
+  gap: 0 10vw;
+  position: absolute;
+  top: 4vh;
+  left: 3vw;
+  z-index: 3;
+}
+
+.window_one,
+.window_two,
+.window_three,
+.window_four,
+.window_five,
+.window_six {
+  width: 3vw;
+  height: 5vh;
+  background-color: rgb(0, 255, 51);
+}
+
+.window_one {
+  grid-area: one;
+}
+
+.window_two {
+  grid-area: two;
+}
+
+.windwo_three {
+  grid-area: three;
+}
+
+.window_four {
+  grid-area: four;
+}
+
+.window_five {
+  grid-area: five;
+}
+
+.window_six {
+  grid-area: six;
+}
+
+#moon {
+  display: flexbox;
+  width: 250px;
+  height: 250px;
+  background-color: silver;
+  border-style: dotted;
+  border-color: whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+}
+
+#grass {
+  background-color: green;
+  width: 100vw;
+  height: 10vh;
+}
+
+#street {
+  background-color: black;
+  width: 100vw;
+  height: 15vh;
+  position: relative; /* Parent for absolute positioning */
+  z-index: 1;
+}
+
+#white_lines {
+  display: grid;
+  grid-template: "one two three four five six seven" 1vh;
+  gap: 0 12vw;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  z-index: 2;
+}
+
+.line_one,
+.line_two,
+.line_three,
+.line_four,
+.line_five,
+.line_six,
+.line_seven {
+  width: 4vw;
+  height: 0.5vw;
+  background-color: white;
+}
+
+.line_one {
+  grid-area: one;
+}
+
+.line_two {
+  grid-area: two;
+}
+
+.line_three {
+  grid-area: three;
+}
+
+.line_four {
+  grid-area: four;
+}
+
+.line_five {
+  grid-area: five;
+}
+
+.line_six {
+  grid-area: six;
+}
+
+.line_seven {
+  grid-area: seven;
+}
