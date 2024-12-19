@@ -7,8 +7,7 @@
     <title>Picasso</title>
   </head>
   <body>
-    <div id="house"></div>
-
+    <!--Creating a sky with two building that have windows. Also included a moon and a submission form to contact the artist-->
     <article id="sky">
       <section id="building_one">
         <section id="window1">
@@ -32,11 +31,29 @@
         </section>
       </section>
 
+      <!--Submission form to contact the artist. Form collects name and email address.-->
+      <section id="form">
+        <p>
+          Are you interested in this painting? Fill out the information below to
+          reach out to the artist!
+        </p>
+        <form action="formsubmitted.html">
+          <label for="name">Name:</label>
+          <input name="name" type="text" />
+
+          <label for="email">Email:</label>
+          <input name="email" type="email" />
+
+          <input class="submit_btn" type="submit" />
+        </form>
+      </section>
+
       <section id="moon"></section>
     </article>
 
     <div id="grass"></div>
 
+    <!--Creating a street with dotted white lines going accross the pavement to represent a passing line-->
     <article id="street">
       <section id="white_lines">
         <div class="line_one"></div>

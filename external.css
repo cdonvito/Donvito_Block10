@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(41, 89, 51);
 }
 
 #sky {
@@ -94,6 +95,15 @@ body {
   grid-area: six;
 }
 
+#form {
+  display: flexbox;
+  position: absolute;
+  top: 3vh;
+  left: 40vw;
+  background-color: rgba(127, 255, 212, 0.558);
+  text-align: center;
+}
+
 #moon {
   display: flexbox;
   width: 250px;
@@ -169,4 +179,76 @@ body {
 
 .line_seven {
   grid-area: seven;
+}
+
+#input_success {
+  display: flexbox;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  background-color: rgba(137, 43, 226, 0.972);
+  color: aqua;
+  border-radius: 10px;
+  padding: 2vw;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #building_one {
+    width: 8vw !important;
+  }
+
+  #building_two {
+    width: 31vw !important;
+  }
+
+  #moon {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .window_one,
+  .window_two,
+  .window_three,
+  .window_four,
+  .window_five,
+  .window_six {
+    width: 2vw !important;
+  }
+
+  #input_success {
+    padding: 1.5vw !important;
+    font-size: 15px !important;
+    left: 25vw !important;
+  }
+}
+
+@media (max-width: 328px) {
+  #building_one {
+    width: 7vw !important;
+  }
+
+  #building_two {
+    width: 30vw !important;
+  }
+
+  #moon {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .window_one,
+  .window_two,
+  .window_three,
+  .window_four,
+  .window_five,
+  .window_six {
+    width: 1.5vw !important;
+  }
+
+  #input_success {
+    padding: 1vw !important;
+    font-size: 10px !important;
+    left: 20vw !important;
+  }
 }
